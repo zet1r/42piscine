@@ -8,7 +8,7 @@ void	ft_putchar(char c)
 void	ft_putnbr(int nb)
 {
 	int	dig;
-	int	x[4];
+	int	x[9];
 
 	dig = -1;
 	if (nb < 0)
@@ -20,14 +20,14 @@ void	ft_putnbr(int nb)
 		ft_putchar(nb + '0');
 	else
 	{
-		while ((nb > 0) && ((nb % 10) != 0))
+		while (nb > 0)
 		{
 			x[++dig] = nb % 10;
 			nb = nb / 10;
 		}
-		while (--dig >= 0)
+		while (dig >= 0)
 		{
-			ft_putchar(x[dig] + '0');
+			ft_putchar(x[dig--] + '0');
 		}
 	}
 }
