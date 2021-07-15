@@ -4,7 +4,8 @@ void	ft_rev_int_tab(int *tab, int size)
 	int	n;
 
 	i = 0;
-	while ((i <= size) && (size >= 0))
+	size--;
+	while (i <= size)
 	{
 		n = tab[i];
 		tab[i] = tab[size];
@@ -32,11 +33,10 @@ int	main(void)
 	}
 	ft_rev_int_tab(tab2, 10);
 	i = 0;
-	while (i <= size2)
+	while (i < size2)
 	{
 		printf("%d \n", tab2[i]);
 		i++;
 	}
 	return (0);
-}
-*/
+}*/
