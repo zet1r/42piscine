@@ -1,0 +1,6 @@
+Credentials cache: API:6292C864-84CE-4258-B19F-9C1CA550C513
+        Principal: jdias-mo@42LISBOA.COM
+
+  Issued                Expires               Principal
+Jul  1 15:48:25 2021  Jul  2 01:48:25 2021  krbtgt/42LISBOA.COM@42LISBOA.COM
+Jul  1 15:48:27 2021  Jul  2 01:48:25 2021  HTTP/student-storage.42lisboa.com@42LISBOA.COM
