@@ -8,7 +8,7 @@
 # endif
 
 # ifndef ODD_MSG
-#  define ODD_MSG "O have an odd number os arguments.\n"
+#  define ODD_MSG "I have an odd number os arguments.\n"
 # endif
 
 # ifndef EVEN
