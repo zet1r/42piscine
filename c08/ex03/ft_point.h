@@ -1,7 +1,7 @@
 #ifndef FT_POINT_H
 # define FT_POINT_H
 
-typedef structure s_point
+typedef struct s_point
 {
 	int	x;
 	int	y;
