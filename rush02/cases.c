@@ -4,7 +4,6 @@ void	case1(char *str, t_dict *dict)
 {
 	if (str[0] != '0')
 		search(str, dict);
-	free(str);
 }
 
 void	case2(char *str, t_dict *dict)
@@ -23,7 +22,6 @@ void	case2(char *str, t_dict *dict)
 			case1(crop(str, dict), dict);
 		}
 	}
-	free(str);
 }
 
 void	case3(char *str, t_dict *dict)
@@ -41,7 +39,6 @@ void	case3(char *str, t_dict *dict)
 		search(subzero(str, dict), dict);
 		case2(crop(str, dict), dict);
 	}
-	free(str);
 }
 
 char	*case4aux(char *str, int *len, t_dict *dict)
@@ -80,5 +77,4 @@ void	case4(char	*str, t_dict *dict)
 			len--;
 		}
 	}
-	free(str);
 }

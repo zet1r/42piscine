@@ -49,7 +49,7 @@ int	main(void)
 {
 	char	str1[] = "1234";
 	char	str2[] = "56789";
-	int	n = 1;
+	int	n = 3;
 
 	ft_putstr(str1);
 	ft_putchar('\n');
