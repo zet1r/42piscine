@@ -8,14 +8,14 @@ LIBC = ar rc
 
 CFLAGS = -Wall -Wextra -Werror
 
-HEADER = includes
+HEADS = includes/
 
 SRCS = srcs/ft_putchar.c srcs/ft_swap.c srcs/ft_putstr.c srcs/ft_strlen.c srcs/ft_strcmp.c
 
-OBJ = ${SRCS:.c=.o}
+OBJS = ${SRCS:.c=.o}
 
 .c.o:
-			${CC} ${CFLAGS} -c $< -o ${<:.c=.o} -I${HEADER}
+			${CC} ${CFLAGS} -c $< -o ${<:.c=.o} -I${HEADS}
 
 ${NAME}:	${OBJS}
 			${LIBC} ${NAME} ${OBJS}

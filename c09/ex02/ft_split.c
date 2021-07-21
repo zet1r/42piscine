@@ -90,14 +90,14 @@ char	**ft_split(char *str, char *charset)
 	tab[g_x] = 0;
 	return (tab);
 }
-/*
+
 #include <stdio.h>
 
 int	main(void)
 {
 	int	i;
-	char str[] = "2asdasda2  2asdadsa2 1111 2asdasda2 2a2asdadsa2";
-	char charset[] = "      1 1 21 1111 ";
+	char str[] = "123456789";
+	char charset[] = "0";
 
 	printf("%d\n", ft_cont(str, charset));
 	i = 0;
@@ -107,4 +107,4 @@ int	main(void)
 		i++;
 	}
 	return (0);
-}*/
+}
