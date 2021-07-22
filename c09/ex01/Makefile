@@ -15,18 +15,18 @@ SRCS = srcs/ft_putchar.c srcs/ft_swap.c srcs/ft_putstr.c srcs/ft_strlen.c srcs/f
 OBJS = ${SRCS:.c=.o}
 
 .c.o:
-			${CC} ${CFLAGS} -c $< -o ${<:.c=.o} -I${HEADS}
+							${CC} ${CFLAGS} -c $< -o ${<:.c=.o} -I ${HEADS}
 
 ${NAME}:	${OBJS}
-			${LIBC} ${NAME} ${OBJS}
+							${LIBC} ${NAME} ${OBJS}
 
 all:		${NAME}
 
 clean:
-			${RM} ${OBJS}
+							${RM} ${OBJS}
 
 fclean:		clean
-			${RM} ${NAME}
+							${RM} ${NAME}
 
 re:			fclean all
 

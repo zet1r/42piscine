@@ -90,7 +90,7 @@ char	**ft_split(char *str, char *charset)
 	tab[g_x] = 0;
 	return (tab);
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -107,4 +107,4 @@ int	main(void)
 		i++;
 	}
 	return (0);
-}
+}*/
